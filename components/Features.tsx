@@ -7,8 +7,11 @@ type Props = {};
 
 const Features = (props: Props) => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto text-center">
+    <section
+      className="relative bg-gradient-to-r from-purple-700 to-purple-900 flex justify-center items-center
+      flex-col overflow-clip mx-auto sm:px-10 px-5 pb-4 pt-[70px] bg-white"
+    >
+      <div className="max-w-7xl w-full text-center">
         <h2 className="text-3xl font-bold mb-2 leading-1">
           You'll Love Our <br /> Powerful Payments
         </h2>

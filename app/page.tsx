@@ -13,6 +13,8 @@ import Navigation from "@/components/Navigation";
 import Features from "@/components/Features";
 import Payment from "@/components/Payment";
 import Overview from "@/components/Overview";
+import Testimonial from "@/components/Testimonial";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
       <Features />
       <Payment />
       <Overview />
+      <Testimonial />
+      <Faq />
       {/* <Hero /> */}
       {/* <Grid />
         <RecentProject />
