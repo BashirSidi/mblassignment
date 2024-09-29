@@ -19,6 +19,7 @@ export const assets = {
   overviewCard2: "/overviewCard2.png",
   overviewCard3: "/overviewCard3.png",
   overviewCard4: "/overviewCard4.png",
+  getStarted: "/getStarted.png",
 };
 
 export const gridItems = [

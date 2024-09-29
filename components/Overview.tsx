@@ -59,17 +59,107 @@ const Overview = (props: Props) => {
             <img
               src={assets.overviewCard1}
               alt={assets.overviewCard1}
-              className="rounded-[30px] border-white"
+              className="rounded-[30px] border-white shadow-md"
             />
-            <img src={assets.overviewCard2} alt={assets.overviewCard2} className="rounded-[30px]" />
-            <img src={assets.overviewCard3} alt={assets.overviewCard3} className="rounded-[30px]" />
-            <img src={assets.overviewCard4} alt={assets.overviewCard4} className="rounded-[30px]" />
+            <img
+              src={assets.overviewCard2}
+              alt={assets.overviewCard2}
+              className="rounded-[30px] border-white shadow-md"
+            />
+            <img
+              src={assets.overviewCard3}
+              alt={assets.overviewCard3}
+              className="rounded-[30px] border-white shadow-md"
+            />
+            <img
+              src={assets.overviewCard4}
+              alt={assets.overviewCard4}
+              className="rounded-[30px] border-white shadow-md"
+            />
           </div>
 
           {/* big card */}
+          <div className="w-[100%] p-10 md:p-20 rounded-[15px] md:rounded-[30px] md:w-[80%] mx-auto mt-[40px] md:mt-20 bg-[#fceff0]">
+            <h2 className="text-xl md:text-3xl text-black text-center md:text-left font-bold mb-2 leading-1">
+              More free tools that you can handle
+            </h2>
+            <div className="mt-10 flex flex-col md:flex-row gap-6 justify-between ms-10 md:ms-0">
+              <ul className="list-disc text-left px-3">
+                <li className="text-xs font-light leading-1 mb-2 h2 ">Invoicing</li>
+                <li className="text-xs font-light leading-1 my-2 h2">Icard Vault</li>
+                <li className="text-xs font-light leading-1 mb-0 h2">Recurring Plans</li>
+              </ul>
 
-          <div className="ccard w-[100%] md:w-[80%] mx-auto mt-15 md:mt-20 bg-[#fceff0]">
-            <h2>CARD</h2>
+              <ul className="list-disc text-left px-3">
+                <li className="text-xs font-light leading-1 mb-2 h2">Online Checkout</li>
+                <li className="text-xs font-light leading-1 my-2 h2">Customer Portal</li>
+                <li className="text-xs font-light leading-1 mb-0 h2">Payment Links</li>
+              </ul>
+
+              <ul className="list-disc text-left px-3">
+                <li className="text-xs font-light leading-1 mb-2 h2">Point-of-Sale</li>
+                <li className="text-xs font-light leading-1 my-2 h2">Inventory</li>
+                <li className="text-xs font-light leading-1 mb-0 h2">SMS Payment</li>
+              </ul>
+
+              <ul className="list-disc text-left px-3">
+                <li className="text-xs font-light leading-1 mb-2 h2">Online Food Ordering</li>
+                <li className="text-xs font-light leading-1 my-2 h2">Virtual Terminal</li>
+                <li className="text-xs font-light leading-1 mb-0 h2">QR Codes</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* get started */}
+          <div className="rounded-[30px] mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="w-full">
+                <img
+                  src={assets.getStarted}
+                  alt={assets.getStarted}
+                  className="object-fill w-full h-full"
+                />
+              </div>
+
+              <div className="flex justify-between flex-col items-center">
+                <div className="">
+                  <p className="text-xs mt-[6%] mb-4 font-light text-gray-700 text-left">
+                    <span className="border-b-2 border-b-green-400">Open An Account</span>
+                  </p>
+                  <h3 className="text-3xl pt-2 font-semibold mb-4 text-left">Let's get started</h3>
+
+                  <div className="text-left mt-10 flex flex-row items-center gap-2 md:gap-4">
+                    <span>01</span>
+                    <span className="text-xs font-light text-gray-700 text-left">
+                      Sign up in a few minutes
+                    </span>
+                  </div>
+
+                  <div className="text-left mt-8 flex flex-row items-center gap-2 md:gap-4">
+                    <span>02</span>
+                    <span className="text-xs font-light text-gray-700 text-left">
+                      Let us verify your identity
+                    </span>
+                  </div>
+
+                  <div className="text-left mt-8 flex flex-row items-center gap-2 md:gap-4">
+                    <span>03</span>
+                    <span className="text-xs font-light text-gray-700 text-left">
+                      Your account is open: you can send <br /> your first payment
+                    </span>
+                  </div>
+
+                  <div className="text-left mt-10">
+                    <button className="bg-gradient-to-b from-green-500 to-green-600 text-xs rounded-lg shadow-purple-bottom px-4 py-2 text-white">
+                      Open An Account in Minutes
+                    </button>
+                    <div className="text-xs mt-4 font-light text-gray-700 text-left">
+                      Try it for 30 days. For free. No obligation.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
