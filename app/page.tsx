@@ -8,23 +8,26 @@ import Experience from "@/components/Experience";
 import { navItems } from "@/data";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
+import Heroo from "@/components/Heroo";
 import Navigation from "@/components/Navigation";
+import Features from "@/components/Features";
+import Payment from "@/components/Payment";
+import Overview from "@/components/Overview";
 
 export default function Home() {
   return (
-    <main
-      className="relative bg-white flex justify-center items-center
-      flex-col overflow-clip mx-auto sm:px-10 px-5"
-    >
-      <div className="max-w-7xl w-full">
-        <Navigation />
-        <Hero />
-        {/* <Grid />
+    <main>
+      <Navigation />
+      <Heroo />
+      <Features />
+      <Payment />
+      <Overview />
+      {/* <Hero /> */}
+      {/* <Grid />
         <RecentProject />
         <Experience />
         <Approach />
         <Footer /> */}
-      </div>
     </main>
   );
 }

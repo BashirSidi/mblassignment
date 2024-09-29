@@ -5,6 +5,22 @@ export const navItems = [
   { name: "Contact", link: "#footer" },
 ];
 
+export const assets = {
+  logo: "/logo.png",
+  img: "/heroIcon.png",
+  listText: "listText.png",
+  iconLists: ["user1.png", "/user2.png", "/user3.png", "/user4.png"],
+  featureImg1: "/featureImg1.png",
+  featureImg2: "/featureImg2.png",
+  featureImg3: "/featureImg3.png",
+  paymentMethods: "/paymentMethods.png",
+  overviewTextLine: "/overviewTextLine.png",
+  overviewCard1: "/overviewCard1.png",
+  overviewCard2: "/overviewCard2.png",
+  overviewCard3: "/overviewCard3.png",
+  overviewCard4: "/overviewCard4.png",
+};
+
 export const gridItems = [
   {
     id: 1,

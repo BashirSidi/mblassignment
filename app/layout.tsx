@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bashir Salisu Sidi",
-  description: "Created by Bashir Salisu Sidi - Senior Frontend (Reactjs- Nextjs)",
+  description: "MBL Limited Assignment",
 };
 
 export default function RootLayout({
