@@ -1,18 +1,15 @@
 import { assets } from "@/data";
 import React from "react";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import Wave from "react-wavify";
-import { Button } from "./ui/moving-border";
 
 type Props = {};
 
 const Faq = (props: Props) => {
   return (
     <section className="">
-      <div className="bg-white pb-20">
+      <div className="bg-white pb-5">
         <div className="container mx-auto text-center">
           {/* get started */}
-          <div className="rounded-[30px] mt-20">
+          <div className="rounded-[30px] pb-10 mt-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="w-full">
                 <p className="text-xs mt-[6%] mb-4 font-light text-gray-700 text-center md:text-left">
@@ -28,7 +25,7 @@ const Faq = (props: Props) => {
                 </p>
 
                 <div className="flex flex-col md:flex-row mt-8">
-                  <button className="mx-auto md:mx-0 mb-10 md:mb-0 bg-gradient-to-b z-10 h-[35px] w-[50%] from-green-500 to-green-600 text-xs rounded-lg shadow-purple-bottom px-4 py-2 text-white">
+                  <button className="mx-auto md:mx-0 mb-10  md:mb-0 bg-gradient-to-b z-10 h-[35px] w-[50%] from-green-500 to-green-600 text-xs rounded-lg shadow-purple-bottom px-4 py-2 text-white">
                     Get in Touch
                   </button>
                   <img
@@ -227,7 +224,42 @@ const Faq = (props: Props) => {
             </div>
           </div>
 
-          <div>testitn</div>
+          <div className="relative p-10 -mb-[280px] z-60 w-[100%] md:w-[80%] rounded-[15px] md:rounded-[30px] mx-auto mt-[40px] md:mt-20 bg-[#6d38c3]">
+            <div className="w-full max-w-sm min-w-[200px] mx-auto">
+              <input
+                className="w-full bg-[#d5c5ee] placeholder:text-slate-400 text-white text-sm rounded-full px-3 py-4 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+                placeholder="Full Name"
+              />
+            </div>
+
+            <div className="w-full mt-5 max-w-sm min-w-[200px] mx-auto">
+              <input
+                type="email"
+                className="w-full bg-[#d5c5ee] placeholder:text-slate-400 text-white text-sm rounded-full px-3 py-4 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+                placeholder="Email address"
+              />
+            </div>
+
+            <div className="w-full mt-5 max-w-sm min-w-[200px] mx-auto">
+              <input
+                type="text"
+                className="w-full bg-[#d5c5ee] placeholder:text-slate-400 text-white text-sm rounded-full px-3 py-4 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+                placeholder="Phone number"
+              />
+            </div>
+
+            <div className="w-full mt-5 max-w-sm min-w-[200px] mx-auto">
+              <input
+                type="text"
+                className="w-full h-[100px] bg-[#d5c5ee] placeholder:text-slate-400 text-white text-sm rounded-lg px-3 pb-4 transition duration-300 ease focus:outline-none shadow-sm focus:shadow"
+                placeholder="Enter your message"
+              />
+            </div>
+
+            <button className="bg-gradient-to-b text-white from-green-500 to-green-600 rounded-lg shadow-purple-bottom mt-7 px-6 py-3">
+              Get Started for free
+            </button>
+          </div>
         </div>
       </div>
     </section>

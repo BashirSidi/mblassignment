@@ -21,6 +21,8 @@ export const assets = {
   overviewCard4: "/overviewCard4.png",
   getStarted: "/getStarted.png",
   faqImg: "/faqImg.png",
+  footerLogo: "/footerLogo.png",
+  downloadApp: "/downloadApp.png",
 };
 
 export const gridItems = [
@@ -242,5 +244,9 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
+  },
+  {
+    id: 4,
+    img: "/twit.svg",
   },
 ];

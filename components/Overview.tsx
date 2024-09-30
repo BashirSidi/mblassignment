@@ -2,7 +2,6 @@ import { assets } from "@/data";
 import React from "react";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Wave from "react-wavify";
-import { Button } from "./ui/moving-border";
 
 type Props = {};
 
@@ -78,41 +77,6 @@ const Overview = (props: Props) => {
               className="rounded-[30px] border-white shadow-md"
             />
           </div>
-
-          {/* <Button
-            duration={Math.floor(Math.random() * 10000 + 10000)}
-            borderRadius="1.75rem"
-            className="flex flex-col pl-8 md:p-20 bg-gray-50 text-left text-black border-neutral-200"
-          >
-            <h2 className="text-xl md:text-3xl text-black text-left md:text-left font-bold mb-2 leading-1">
-              More free tools that you can handle
-            </h2>
-            <div className="mt-10 flex flex-col md:flex-row gap-6 justify-between ms-10 md:ms-0">
-              <ul className="list-disc text-left px-3">
-                <li className="text-xs font-light leading-1 mb-2 h2 ">Invoicing</li>
-                <li className="text-xs font-light leading-1 my-2 h2">Icard Vault</li>
-                <li className="text-xs font-light leading-1 mb-0 h2">Recurring Plans</li>
-              </ul>
-
-              <ul className="list-disc text-left px-3">
-                <li className="text-xs font-light leading-1 mb-2 h2">Online Checkout</li>
-                <li className="text-xs font-light leading-1 my-2 h2">Customer Portal</li>
-                <li className="text-xs font-light leading-1 mb-0 h2">Payment Links</li>
-              </ul>
-
-              <ul className="list-disc text-left px-3">
-                <li className="text-xs font-light leading-1 mb-2 h2">Point-of-Sale</li>
-                <li className="text-xs font-light leading-1 my-2 h2">Inventory</li>
-                <li className="text-xs font-light leading-1 mb-0 h2">SMS Payment</li>
-              </ul>
-
-              <ul className="list-disc text-left px-3">
-                <li className="text-xs font-light leading-1 mb-2 h2">Online Food Ordering</li>
-                <li className="text-xs font-light leading-1 my-2 h2">Virtual Terminal</li>
-                <li className="text-xs font-light leading-1 mb-0 h2">QR Codes</li>
-              </ul>
-            </div>
-          </Button> */}
 
           {/* big card */}
           <div className="p-10 md:p-20 w-[100%] md:w-[80%] mb-20 rounded-[15px] md:rounded-[30px] mx-auto mt-[40px] md:mt-20 bg-[#fceff0]">

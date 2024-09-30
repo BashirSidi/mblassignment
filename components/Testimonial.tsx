@@ -1,9 +1,6 @@
 "use client";
 import { assets } from "@/data";
 import React from "react";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import Wave from "react-wavify";
-import { Button } from "./ui/moving-border";
 import Slider from "react-slick";
 
 type Props = {};
