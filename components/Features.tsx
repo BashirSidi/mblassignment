@@ -13,7 +13,7 @@ const Features = (props: Props) => {
     >
       <div className="max-w-7xl w-full text-center">
         <h2 className="text-3xl font-bold mb-2 leading-1">
-          You'll Love Our <br /> Powerful Payments
+          You&apos;ll Love Our <br /> Powerful Payments
         </h2>
 
         <TextGenerateEffect

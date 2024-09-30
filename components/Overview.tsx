@@ -126,7 +126,9 @@ const Overview = (props: Props) => {
                   <p className="text-xs mt-[6%] mb-4 font-light text-gray-700 text-left">
                     <span className="border-b-2 border-b-green-400">Open An Account</span>
                   </p>
-                  <h3 className="text-3xl pt-2 font-semibold mb-4 text-left">Let's get started</h3>
+                  <h3 className="text-3xl pt-2 font-semibold mb-4 text-left">
+                    Let&apos;s get started
+                  </h3>
 
                   <div className="text-left mt-10 flex flex-row items-center gap-2 md:gap-4">
                     <span>01</span>
