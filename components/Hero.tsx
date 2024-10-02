@@ -1,29 +1,32 @@
 "use client";
 import { assets } from "@/data";
-import React from "react";
-import useWindowSize from 'react-use/lib/useWindowSize'
-import Confetti from 'react-confetti'
+import React, { useEffect, useState } from "react";
+import Confetti from "react-confetti";
 
 type Props = {};
 
 const Hero = (props: Props) => {
-  const { width, height } = useWindowSize()
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
   const scrollToFooter = () => {
     const footer = document.getElementById("footer");
     if (footer) {
       footer.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+    }
+  }, []);
   return (
     <section
       className="relative bg-gradient-to-r from-purple-700 to-purple-900 flex text-white justify-center items-center
       flex-col overflow-clip mx-auto sm:px-10 px-5 pb-4 pt-[70px] bg-[#6624d1]"
     >
-      <Confetti
-        width={window.innerWidth}
-        height={window.innerHeight}
-        recycle={false}
-      />
+      {windowSize.width > 0 && (
+        <Confetti width={windowSize.width} height={windowSize.height} recycle={false} />
+      )}
       <div className="max-w-7xl w-full">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="text-center md:text-left md:w-1/2">
@@ -40,16 +43,14 @@ const Hero = (props: Props) => {
             </div>
             <div className="flex items-center ml-2">
               {assets.iconLists.map((icon, index) => (
-                <>
-                  <div
-                    key={icon}
-                    className="ml-1 border border-[#3a4bc3]/[0.2] rounded-full 
+                <div
+                  key={icon}
+                  className="ml-1 border border-[#3a4bc3]/[0.2] rounded-full 
                     h-8 w-8 bg-gray-300 flex justify-center items-center"
-                    style={{ transform: `translateX(-${5 * index * 2}px)` }}
-                  >
-                    <img src={icon} alt={icon} className="rounded-full" />
-                  </div>
-                </>
+                  style={{ transform: `translateX(-${5 * index * 2}px)` }}
+                >
+                  <img src={icon} alt={icon} className="rounded-full" />
+                </div>
               ))}
             </div>
           </div>

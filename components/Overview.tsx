@@ -15,7 +15,7 @@ const Overview = (props: Props) => {
         options={{
           height: 20,
           amplitude: 20,
-          speed: 0.30,
+          speed: 0.3,
           points: 7,
         }}
       />
@@ -54,58 +54,382 @@ const Overview = (props: Props) => {
             </div>
           </div>
 
-          {/* card */}
+          {/* cards */}
           <div className="flex bg-[#fff] flex-col md:flex-row justify-between gap-10 md:gap-0">
             <img
               src={assets.overviewCard1}
               alt={assets.overviewCard1}
-              className="rounded-[30px] border-white shadow-md"
+              className="
+    rounded-[30px] 
+    border-white 
+    shadow-md 
+    transition 
+    duration-500 
+    ease-in-out 
+    transform 
+    hover:scale-105 
+    hover:shadow-xl 
+    hover:rotate-2
+  "
             />
+
             <img
               src={assets.overviewCard2}
               alt={assets.overviewCard2}
-              className="rounded-[30px] border-white shadow-md"
+              className="
+    rounded-[30px] 
+    border-white 
+    shadow-md 
+    transition 
+    duration-500 
+    ease-in-out 
+    transform 
+    hover:scale-105 
+    hover:shadow-xl 
+    hover:rotate-2
+  "
             />
             <img
               src={assets.overviewCard3}
               alt={assets.overviewCard3}
-              className="rounded-[30px] border-white shadow-md"
+              className="
+    rounded-[30px] 
+    border-white 
+    shadow-md 
+    transition 
+    duration-500 
+    ease-in-out 
+    transform 
+    hover:scale-105 
+    hover:shadow-xl 
+    hover:rotate-2
+  "
             />
             <img
               src={assets.overviewCard4}
               alt={assets.overviewCard4}
-              className="rounded-[30px] border-white shadow-md"
+              className="
+    rounded-[30px] 
+    border-white 
+    shadow-md 
+    transition 
+    duration-500 
+    ease-in-out 
+    transform 
+    hover:scale-105 
+    hover:shadow-xl 
+    hover:rotate-2
+  "
             />
           </div>
 
           {/* big card */}
-          <div className="p-10 md:p-20 w-[100%] md:w-[80%] mb-20 rounded-[15px] md:rounded-[30px] mx-auto mt-[40px] md:mt-20 bg-[#fceff0]">
+          <div
+            className="
+    p-10 
+    md:p-20 
+    w-[100%] 
+    md:w-[80%] 
+    mb-20 
+    rounded-[15px] 
+    md:rounded-[30px] 
+    mx-auto 
+    mt-[40px] 
+    md:mt-20 
+    bg-[#fceff0] 
+    opacity-0 
+    animate-fadeIn 
+    transition-all 
+    duration-700 
+    hover:scale-105 
+    hover:shadow-lg"
+          >
             <h2 className="text-xl md:text-3xl text-black text-center md:text-left font-bold mb-2 leading-1">
               More free tools that you can handle
             </h2>
             <div className="mt-10 flex flex-col md:flex-row gap-6 justify-between ms-10 md:ms-0">
               <ul className="list-disc text-left px-3">
-                <li className="text-xs font-light leading-1 mb-2 h2 ">Invoicing</li>
-                <li className="text-xs font-light leading-1 my-2 h2">Icard Vault</li>
-                <li className="text-xs font-light leading-1 mb-0 h2">Recurring Plans</li>
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      mb-2 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Invoicing
+                </li>
+
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      my-2 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Icard Vault
+                </li>
+
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      mb-0 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Recurring Plans
+                </li>
               </ul>
 
               <ul className="list-disc text-left px-3">
-                <li className="text-xs font-light leading-1 mb-2 h2">Online Checkout</li>
-                <li className="text-xs font-light leading-1 my-2 h2">Customer Portal</li>
-                <li className="text-xs font-light leading-1 mb-0 h2">Payment Links</li>
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      mb-2 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Online Checkout
+                </li>
+
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      my-2 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Customer Portal
+                </li>
+
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      mb-0 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Payment Links
+                </li>
               </ul>
 
               <ul className="list-disc text-left px-3">
-                <li className="text-xs font-light leading-1 mb-2 h2">Point-of-Sale</li>
-                <li className="text-xs font-light leading-1 my-2 h2">Inventory</li>
-                <li className="text-xs font-light leading-1 mb-0 h2">SMS Payment</li>
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      mb-2 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Point-of-Sale
+                </li>
+
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      my-2 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Inventory
+                </li>
+
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      mb-0 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  SMS Payment
+                </li>
               </ul>
 
               <ul className="list-disc text-left px-3">
-                <li className="text-xs font-light leading-1 mb-2 h2">Online Food Ordering</li>
-                <li className="text-xs font-light leading-1 my-2 h2">Virtual Terminal</li>
-                <li className="text-xs font-light leading-1 mb-0 h2">QR Codes</li>
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      mb-2 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Online Food Ordering
+                </li>
+
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      my-2 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  Virtual Terminal
+                </li>
+
+                <li
+                  className="
+      text-xs 
+      font-light 
+      leading-1 
+      mb-0 
+      relative 
+      transition-all 
+      duration-500 
+      hover:before:w-full
+      before:absolute 
+      before:bottom-0 
+      before:left-0 
+      before:w-0 
+      before:h-[2px] 
+      before:bg-gray-700 
+      before:transition-all 
+      before:duration-500
+    "
+                >
+                  QR Codes
+                </li>
               </ul>
             </div>
           </div>
