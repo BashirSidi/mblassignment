@@ -15,8 +15,8 @@ const Overview = (props: Props) => {
         options={{
           height: 20,
           amplitude: 20,
-          speed: 0.15,
-          points: 3,
+          speed: 0.30,
+          points: 7,
         }}
       />
       <div className=" h-20 bg-gradient-to-b pt-[100px] from-[#f3f1f6] via-[#fdfdfd] via-99.9% to-[#fdfdfd]"></div>

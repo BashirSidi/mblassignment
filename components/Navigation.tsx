@@ -64,30 +64,35 @@ const Navigation = (props: Props) => {
           >
             {/* Navigation at the top on mobile */}
             <ul className="flex lg:flex-row flex-col space-y-4 lg:space-y-0 lg:space-x-4 mt-4 lg:mt-0">
-              <li>
-                <a href="#home" className="hover:text-gray-300 font-light no-underline">
+              <li className="relative group">
+                <a href="#home" className="hover:text-gray-300 font-light no-underline transition-colors duration-300 ease-in-out">
                   Home
                 </a>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-500 group-hover:w-full"></span>
               </li>
-              <li>
-                <a href="#pages" className="hover:text-gray-300 font-light no-underline">
+              <li className="relative group">
+                <a href="#home" className="hover:text-gray-300 font-light no-underline transition-colors duration-300 ease-in-out">
                   Pages
                 </a>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-500 group-hover:w-full"></span>
               </li>
-              <li>
-                <a href="#projects" className="hover:text-gray-300 font-light no-underline">
+              <li className="relative group">
+                <a href="#home" className="hover:text-gray-300 font-light no-underline transition-colors duration-300 ease-in-out">
                   Projects
                 </a>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-500 group-hover:w-full"></span>
               </li>
-              <li>
-                <a href="#blog" className="hover:text-gray-300 font-light no-underline">
+              <li className="relative group">
+                <a href="#home" className="hover:text-gray-300 font-light no-underline transition-colors duration-300 ease-in-out">
                   Blog
                 </a>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-500 group-hover:w-full"></span>
               </li>
-              <li>
-                <a href="#contact" className="hover:text-gray-300 font-light no-underline">
+              <li className="relative group">
+                <a href="#home" className="hover:text-gray-300 font-light no-underline transition-colors duration-300 ease-in-out">
                   Contact
                 </a>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-500 group-hover:w-full"></span>
               </li>
             </ul>
 
@@ -105,7 +110,7 @@ const Navigation = (props: Props) => {
           {/* Desktop buttons */}
           <div className="hidden lg:flex space-x-4">
             <button className="bg-transparent px-4 py-2 rounded font-light no-border">Login</button>
-            <button className="bg-gradient-to-b from-green-500 to-green-600 rounded-lg shadow-purple-bottom px-4 py-2">
+            <button className="bg-gradient-to-b from-green-500 to-green-600 rounded-lg shadow-purple-bottom px-4 py-2 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
               Sign Up
             </button>
           </div>
