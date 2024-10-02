@@ -1,6 +1,8 @@
 "use client";
 import { assets } from "@/data";
 import React from "react";
+import useWindowSize from 'react-use/lib/useWindowSize'
+import Confetti from 'react-confetti'
 
 type Props = {};
 
@@ -12,11 +14,16 @@ const Hero = (props: Props) => {
     }
   };
 
+  const { width, height } = useWindowSize()
   return (
     <section
       className="relative bg-gradient-to-r from-purple-700 to-purple-900 flex text-white justify-center items-center
       flex-col overflow-clip mx-auto sm:px-10 px-5 pb-4 pt-[70px] bg-[#6624d1]"
     >
+      <Confetti
+        width={width}
+        height={height}
+      />
       <div className="max-w-7xl w-full">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="text-center md:text-left md:w-1/2">
